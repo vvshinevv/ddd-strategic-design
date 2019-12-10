@@ -11,4 +11,27 @@
 
 ## 모델링
 
-- 
+```uml
+Object <|-- Dummy
+
+class Dummy {
+  String data
+  void methods()
+  -field1
+  #field2
+  ~method1()
+  +method2()
+}
+
+class Flight {
+   flightNumber : Integer
+   departureTime : Date
+}
+
+class Car
+
+Driver - Car : drives >
+Car *- Wheel : have 4 >
+Car -- Person : < owns
+
+```
